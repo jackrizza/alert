@@ -4,6 +4,14 @@ html, body {
   font-weight: thin;
   font-size: 100%; }
 
+.alert {
+  opacity: 1;
+  transition: opacity 0.1s ease-in;
+  -webkit-transition: opacity 0.1s ease-in; }
+
+.alert.close {
+  opacity: 0; }
+
 @media (min-width: 700px) and (orientation: landscape) {
   nav {
     z-index: 1000;
@@ -39,10 +47,10 @@ html, body {
             color: #E6E6E6; }
 
   .container {
+    margin-top: 70px;
     display: table;
     position: absolute;
-    width: 100%;
-    padding-top: 80px; }
+    width: 100%; }
     .container a:hover {
       opacity: 1; }
     .container .row {
@@ -77,11 +85,11 @@ html, body {
         line-height: 140%;
         height: 30%; }
     .container .alert {
-      position: absolute;
-      width: 100%;
-      display: inline;
+      margin: 0 auto;
+      width: 90%;
       height: 40px;
-      padding: 10px; }
+      padding: 10px;
+      margin-bottom: 2px; }
       .container .alert a {
         padding-top: 12px;
         float: left;

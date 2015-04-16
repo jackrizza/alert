@@ -16,6 +16,9 @@ html, body {
       padding-top: calc(75px / 4);
       padding-left: 40px;
       color: #fff; }
+      nav .head h1 a {
+        color: #fff;
+        text-decoration: none; }
     nav .menu {
       float: right;
       margin-top: -70px; }
@@ -52,7 +55,7 @@ html, body {
     .container .well {
       margin: 0 auto;
       height: inherit;
-      width: 80%;
+      width: 95%;
       margin: 10px;
       padding: 40px; }
       .container .well p {
@@ -145,6 +148,9 @@ html, body {
       padding-top: calc(75px / 4);
       padding-left: 40px;
       color: #fff; }
+      nav .head h1 a {
+        color: #fff;
+        text-decoration: none; }
     nav .menu {
       float: right;
       margin-top: -70px; }

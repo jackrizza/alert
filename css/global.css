@@ -164,6 +164,8 @@ html, body {
       margin-top: -70px; }
       nav .menu ul {
         display: none; }
+      nav .menu ul:before {
+        content: "text"; }
 
   .container {
     display: table;

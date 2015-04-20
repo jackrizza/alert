@@ -162,10 +162,10 @@ html, body {
     nav .menu {
       float: right;
       margin-top: -70px; }
+      nav .menu ul::before {
+        content: "hello world"; }
       nav .menu ul {
         display: none; }
-      nav .menu ul:before {
-        content: "text"; }
 
   .container {
     display: table;

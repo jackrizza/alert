@@ -1,7 +1,7 @@
 #alert php
-this is just a little project that I am working on.
+This repository was created for testing and learning purposes. If you have any means in using it in your own applications then please do! I would love to hear if you do use any of my code as well.
 <br />
-My main goal is to :
+Our main goal is to :
   * create alerts that work both on mobile and desktop
   * load via ajax
   * server back-end node.js and mongodb

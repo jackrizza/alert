@@ -177,7 +177,11 @@ html, body {
         padding-top: 60px;
         margin-bottom: 4px;
         width: 100%;
-        background: #333333; }
+        background: #333333;
+        -webkit-transition: 0.5s ease-out;
+        -o-transition: 0.5s ease-out;
+        -moz-transition: 0.5s ease-out;
+        transition: 0.5s ease-out; }
         nav .menu ul li {
           list-style-type: none;
           padding: 5px; }

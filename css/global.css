@@ -45,6 +45,8 @@ html, body {
             cursor: pointer;
             border-bottom: 4px solid #E6E6E6;
             color: #E6E6E6; }
+      nav .menu .menu-icon {
+        display: none; }
 
   .container {
     margin-top: 70px;
@@ -155,9 +157,9 @@ html, body {
     z-index: 1000;
     position: fixed;
     margin: -20px;
-    width: calc(100% + 20px);
+    width: calc(100% + 21px);
     height: 5em;
-    background: rgba(51, 51, 51, 0.98); }
+    background: #333333; }
     nav .head {
       padding-top: calc(75px / 4);
       padding-left: 40px;
@@ -167,11 +169,30 @@ html, body {
         text-decoration: none; }
     nav .menu {
       float: right;
-      margin-top: -70px; }
-      nav .menu ul::before {
-        content: "hello world"; }
+      margin-top: -70px;
+      width: 100%;
+      overflow: hidden; }
       nav .menu ul {
-        display: none; }
+        max-height: 0px;
+        padding-top: 60px;
+        margin-bottom: 4px;
+        width: 100%;
+        background: #333333; }
+        nav .menu ul li {
+          list-style-type: none;
+          padding: 5px; }
+          nav .menu ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2em; }
+      nav .menu .showing {
+        max-height: 15em; }
+    nav .menu-icon {
+      padding: 17px 10px;
+      float: right; }
+    nav .menu-icon img {
+      max-height: 32px;
+      max-width: auto; }
 
   .container {
     display: table;
@@ -300,6 +321,8 @@ html, body {
       nav .menu ul::before {
         content: "hello world"; }
       nav .menu ul {
+        display: none; }
+      nav .menu .menu-icon {
         display: none; }
 
   .container {

@@ -16,7 +16,13 @@
       <h1><a href="index" id="menu">Company</a></h1>
     </div>
     <div class="menu">
-      <ul>
+      <div class="menu-icon">
+         <a>
+            <img src="images/icon-menu.png" alt="" />
+
+         </a>
+      </div>
+      <ul class="">
         <li><a href="#">Products</a>
         </li>
         <li><a href="#">About</a>
@@ -60,6 +66,10 @@
 <script src="js/alert.js"></script>
 <script type="text/javascript">
   $('.alert').alert();
+
+  $('.menu-icon').on('click',function() {
+    $('.menu ul').toggleClass("showing");
+ });
 </script>
 
 </html>

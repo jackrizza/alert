@@ -1,4 +1,4 @@
-#alert php
+#alert
 This repository was created for testing and learning purposes. If you have any means in using it in your own applications then please do! I would love to hear if you do use any of my code as well.
 <br />
 Our main goal is to :

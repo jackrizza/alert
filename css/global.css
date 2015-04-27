@@ -7,12 +7,14 @@ html, body {
 .alert {
   opacity: 1;
   transition: opacity 0.1s ease-in;
-  -webkit-transition: opacity 0.1s ease-in; }
+  -webkit-transition: opacity 0.1s ease-in;
+  -moz-transition: opacity 0.1s ease-in;
+  -o-transition: opacity 0.1s ease-in; }
 
 .alert.close {
   opacity: 0; }
 
-@media (min-width: 700px) {
+@media (min-width: 701px) {
   nav {
     z-index: 1000;
     position: fixed;
@@ -27,6 +29,16 @@ html, body {
       nav .head h1 a {
         color: #fff;
         text-decoration: none; }
+      nav .head h1 span {
+        margin-right: 10px;
+        margin-top: -20px;
+        font-size: 16px;
+        height: auto;
+        width: 64px;
+        padding: 5px;
+        border-radius: 32px;
+        background: #ffacac;
+        color: rgba(51, 51, 51, 0.98); }
     nav .menu {
       float: right;
       margin-top: -70px; }
@@ -167,6 +179,16 @@ html, body {
       nav .head h1 a {
         color: #fff;
         text-decoration: none; }
+      nav .head span {
+        margin-right: 10px;
+        margin-top: -20px;
+        font-size: 16px;
+        height: auto;
+        width: 64px;
+        padding: 5px;
+        border-radius: 32px;
+        background: #ffacac;
+        color: rgba(51, 51, 51, 0.98); }
     nav .menu {
       float: right;
       margin-top: -70px;
@@ -178,10 +200,9 @@ html, body {
         margin-bottom: 4px;
         width: 100%;
         background: #333333;
-        -webkit-transition: 0.5s ease-out;
-        -o-transition: 0.5s ease-out;
-        -moz-transition: 0.5s ease-out;
-        transition: 0.5s ease-out; }
+        -webkit-transition: all 0.5s ease-out;
+        -o-transition: all 0.5s ease-out;
+        -transition: all 0.5s ease-out; }
         nav .menu ul li {
           list-style-type: none;
           padding: 5px; }
@@ -319,6 +340,16 @@ html, body {
       nav .head h1 a {
         color: #fff;
         text-decoration: none; }
+      nav .head span {
+        margin-right: 10px;
+        margin-top: -20px;
+        font-size: 16px;
+        height: auto;
+        width: 64px;
+        padding: 5px;
+        border-radius: 32px;
+        background: #ffacac;
+        color: rgba(51, 51, 51, 0.98); }
     nav .menu {
       float: right;
       margin-top: -70px; }

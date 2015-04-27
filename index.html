@@ -13,7 +13,7 @@
 <body>
   <nav>
     <div class="head">
-      <h1><a href="index" id="menu">Company</a></h1>
+      <h1><a href=""><span class="notifications"></span></a> <a href="index">Company</a></h1>
     </div>
     <div class="menu">
       <div class="menu-icon">
@@ -34,14 +34,6 @@
   </nav>
   <div class="container">
     <div class="alert alert-primary">
-      <a href="#">Hello There. Want to take a tour!</a>
-      <a class="close" href="#">&times;</a>
-    </div>
-    <div class="alert alert-info">
-      <a href="#">Hello There. Want to take a tour!</a>
-      <a class="close" href="#">&times;</a>
-    </div>
-    <div class="alert alert-warning">
       <a href="#">Hello There. Want to take a tour!</a>
       <a class="close" href="#">&times;</a>
     </div>
@@ -70,6 +62,11 @@
   $('.menu-icon').on('click',function() {
     $('.menu ul').toggleClass("showing");
  });
+
+var alertCount = $('.alert').length;
+
+$('.notifications').html(alertCount);
+
 </script>
 
 </html>

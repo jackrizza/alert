@@ -13,7 +13,7 @@
 <body>
   <nav>
     <div class="head">
-      <h1><a href=""><span class="notifications"></span></a> <a href="index">Company</a></h1>
+      <h1><a class="company" href="index">Company</a> <a href="notifications"><span class="notifications">0</span></a></h1>
     </div>
     <div class="menu">
       <div class="menu-icon">
@@ -33,10 +33,12 @@
     </div>
   </nav>
   <div class="container">
+     <!--
     <div class="alert alert-primary">
       <a href="#">Hello There. Want to take a tour!</a>
       <a class="close" href="#">&times;</a>
     </div>
+-->
     <div class="row">
       <div class="well">
         <h1>Welcome Aboard!</h1>
@@ -61,12 +63,13 @@
 
   $('.menu-icon').on('click',function() {
     $('.menu ul').toggleClass("showing");
- });
-
-var alertCount = $('.alert').length;
+});
 
 $('.notifications').html(alertCount);
+window.setInterval(function() {
 
+   $('.notifications').html(/* notification number */);
+}, 250);
 </script>
 
 </html>

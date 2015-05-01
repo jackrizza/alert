@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Company</title>
+  <link rel="stylesheet" href="css/global.css">
+  <meta name="viewport" content="width=device-width, initial-scale=0.41, maximum-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+
+<body>
+  <nav>
+    <div class="head">
+      <h1><a class="company" href="index">Company</a> <a href=""><span class="notifications"></span></a></h1>
+    </div>
+    <div class="menu">
+      <div class="menu-icon">
+         <a>
+            <img src="images/icon-menu.png" alt="" />
+
+         </a>
+      </div>
+      <ul class="">
+        <li><a href="#">Products</a>
+        </li>
+        <li><a href="#">About</a>
+        </li>
+        <li><a href="#">Sign In</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+     <div class="row">
+        <div class="well">
+           <h1>Notification Center</h1>
+           <p>All and any notifications that have popped up through out this session will show up here</p>
+           <hr />
+        </div>
+     </div>
+  </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/alert.js"></script>
+<script type="text/javascript">
+  $('.alert').alert();
+
+  $('.menu-icon').on('click',function() {
+    $('.menu ul').toggleClass("showing");
+});
+var alertCount = $('.alert').length;
+
+$('.notifications').html(alertCount);
+window.setInterval(function() {
+   var alertCount = $('.alert').length;
+
+   $('.notifications').html(alertCount);
+}, 250);
+</script>
+
+</html>

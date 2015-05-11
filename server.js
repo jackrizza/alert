@@ -15,21 +15,26 @@ app.use('/static', express.static(__dirname + '/public'));
 //start server
 app.get('/',function(req,res){
   res.sendFile(path.join(__dirname+'/index.html'));
+  console.log("index.html request @ " + Date());
 });
 
 app.get('/index.html',function(req,res){
   res.sendFile(path.join(__dirname+'/index.html'));
+  console.log("index.html request @ " + Date());
 });
 
 app.get('/index', function(req,res){
   res.sendFile(path.join(__dirname+'/index.html'));
+  console.log("index.html request @ " + Date());
 });
 
 app.get('/notifications', function(req,res){
   res.sendFile(path.join(__dirname+'/notifications.html'));
+  console.log("notifications.html request @ " + Date());
 });
 app.get('/notifications.html', function(req,res){
   res.sendFile(path.join(__dirname+'/notifications.html'));
+  console.log("notifications.html request @ " + Date());
 });
 
 
